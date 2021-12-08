@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade004</title>
+</head>
+<body>
+    <div>
+        <h1>Média total de 2 alunos!</h1>
+        <button type="submit" id="calcular" onclick="calcular()" value="Calcular">Calcular</button>
+    </div>
+    <script>
+        function calcular(){
+            let questao1 = parseInt(prompt('Qual foi a nota de Eduardo?'));
+            let questao2 = parseInt(prompt('Qual foi a nota de Larissa?'));
+            let media = (questao1 + questao2) / 2;
+            //let mediatotal = media1
+            console.log(media);
+
+            alert(`A nota de eduardo foi ${questao1}`);
+            alert(`A nota de Larissa foi ${questao2}`);
+            alert(`A média total dos dois é ${media}`);
+        }
+    </script>
+</body>
+</html>

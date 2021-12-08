@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade003</title>
+</head>
+<body id="fundo">
+    <div class="corpo">
+        <h1>Clique no botão e responda uma pesquisa:</h1>
+        <button type="submit" id="responder" onclick="responder()" value="Responder">Responder</button>
+    </div>
+    <script>
+        function responder(){
+            let questao1 = prompt('Qual o seu nome completo?');
+            let questao2 = prompt('Qual a sua idade?');
+            let questao3 = prompt('Qual a sua profissão?');
+            let questao4 = prompt('Qual o seu sexo? Digite M para masculine e F para Feminino:');
+            let resultado = document.getElementById('resultado');
+            let resposta = document.getElementById('resposta');
+
+            if(questao4 == 'F' || questao4 == 'f'){
+            alert(`Olá senhora!`);
+            document.getElementById('fundo').style.backgroundColor = ('Red')
+        }
+
+        else if(questao4 == 'M' || questao4 == 'm'){
+            alert(`Olá senhor!`);
+            document.getElementById('fundo').style.backgroundColor = ('Blue')
+        }
+
+        else{
+            alert('Valores inválidos!')
+        }
+    }
+
+        
+    </script>
+</body>
+</html>

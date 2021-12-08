@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade002</title>
+</head>
+<body>
+    <div>
+        <h1>Escolha uma tabuada</h1>
+        <button type="submit" id="enviar" onclick="escolher()" value="Escolher">Escolher</button>
+        <div id="tabuada"></div>
+    </div>
+    <script>
+        function escolher(){
+            let aviso = prompt('Escolha qual tabuada você quer ver: \n \n 1 - Se for a tabuada do 1 \n \n 2 - Se for a tabuada do 2 \n \n 3 - Se for a tabuada do 3 \n \n 4 - Se for a tabuada do 4 \n \n 5 - Se for a tabuada do 5');
+            let resultado = document.getElementById('resultado');
+            let valor = parseInt(aviso);
+            let tabuada = document.getElementById('tabuada');
+            tabuada.innerHTML = '';
+
+            switch(valor){
+                case valor:
+                    for(let numero = valor; numero <= valor; numero=numero+1){
+                        for(let multiplica = 0; multiplica <= 5; multiplica=multiplica+1){
+                            let multiplicacao = numero * multiplica;
+                            let linha = '' + numero + ' x ' + multiplica + ' = ' + multiplicacao + '<br></br>';
+                            tabuada.innerHTML += (linha);
+                        }
+                    }
+                break;
+
+                // case 2:
+                //     for(let numero = 2; numero <= 2; numero=numero+1){
+                //         for(let multiplica = 0; multiplica <= 5; multiplica=multiplica+1){
+                //             let multiplicacao = numero * multiplica;
+                //             let linha = '' + numero + ' x ' + multiplica + ' = ' + multiplicacao + '<br></br>';
+                //             tabuada.innerHTML += (linha);
+                //         }
+                //     }
+                // break;
+
+                // case 3:
+                //     for(let numero = 3; numero <= 3; numero=numero+1){
+                //         for(let multiplica = 0; multiplica <= 5; multiplica=multiplica+1){
+                //             let multiplicacao = numero * multiplica;
+                //             let linha = '' + numero + ' x ' + multiplica + ' = ' + multiplicacao + '<br></br>';
+                //             tabuada.innerHTML += (linha);
+                //         }
+                //     }
+                // break;
+
+                // case 4:
+                //     for(let numero = 4; numero <= 4; numero=numero+1){
+                //         for(let multiplica = 0; multiplica <= 5; multiplica=multiplica+1){
+                //             let multiplicacao = numero * multiplica;
+                //             let linha = '' + numero + ' x ' + multiplica + ' = ' + multiplicacao + '<br></br>';
+                //             tabuada.innerHTML += (linha);
+                //         }
+                //     }
+                // break;
+
+                // case 5:
+                //     for(let numero = 5; numero <= 5; numero=numero+1){
+                //         for(let multiplica = 0; multiplica <= 5; multiplica=multiplica+1){
+                //             let multiplicacao = numero * multiplica;
+                //             let linha = '' + numero + ' x ' + multiplica + ' = ' + multiplicacao + '<br></br>';
+                //             tabuada.innerHTML += (linha);
+                //         }
+                //     }
+                // break;
+
+                default:
+                    alert('Valor inválido!')
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
